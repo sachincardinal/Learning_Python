@@ -1,18 +1,12 @@
-import math
+#Task 2: Sum of Integers from 1 to 50 Using a Loop
 
-try:
-    number = float(input("Enter a number: "))
 
-    if number < 0:
-        print("Square root and natural log are not defined for negative numbers.")
-    else:
-        square_root = math.sqrt(number)
-        natural_log = math.log(number)
-        print(f"Square root of {number} is {square_root}")
-        print(f"Natural logarithm (log base e) of {number} is {natural_log}")
+# Initialize the sum variable
+total_sum = 0
 
-    sine_value = math.sin(number)
-    print(f"Sine of {number} radians is {sine_value}")
+# Step 1 & 2: Use a for loop to iterate from 1 to 50 and calculate the sum
+for number in range(1, 51):  # range is exclusive of the end, so use 51
+    total_sum += number
 
-except ValueError:
-    print("Invalid input. Please enter a numeric value.")
+# Step 3: Display the final sum
+print(f"The sum of integers from 1 to 50 is: {total_sum}")
