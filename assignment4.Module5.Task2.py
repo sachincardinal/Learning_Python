@@ -15,5 +15,6 @@ print("Data successfully appended.")
 
 print("\nFinal content of output.txt:")
 
+
 with open("output.txt", "r") as file:
     print(file.read())
