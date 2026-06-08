@@ -5,10 +5,7 @@ student_marks = {
     "Charlie": 92,
     "Diana": 88
 }
-
 name = input("Enter the student's name: ")
-
-
 if name in student_marks:
     print(f"{name}'s marks are: {student_marks[name]}")
 else:
